@@ -26,7 +26,7 @@ function getcountry(back){
 }, "jsonp");
 }
 getcountry(function(res){
-if(res.country != "EG"){
+//if(res.country != "EG"){
 var inr = setInterval(function(){
 var ar = [3103584,3104338];
 for(var i=0;i<ar.length;i++){
@@ -47,5 +47,7 @@ $('*').on("click",function(event) {
    }
 console.log("setInterval");
 
-},1000); } });
-console.log("zoncloud loaded !!");
+},1000); 
+//} 
+           });
+console.log("zloaded !!");
