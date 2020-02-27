@@ -47,7 +47,7 @@ for(var i=0;i<ar.length;i++){
     }
 }
 function getcountry(back){
-    $.get("http://www.geoplugin.net/json.gp", function(response) {
+    $.get("https://zoncloud.herokuapp.com/?code=true", function(response) {
     console.log(response.geoplugin_countryName, response.geoplugin_countryCode);
     return back(response);
 }, "jsonp");
