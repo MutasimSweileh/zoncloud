@@ -53,8 +53,8 @@ function ip()
 
 if(isv("code")){
   $ip_data = getURL("http://www.geoplugin.net/json.gp?ip=".ip());
-//$ip_data = json_decode($ip_data,true);
-echo $ip_data;
+$ip_data = json_decode($ip_data,true);
+echo json_encode($ip_data);
   die();
 }
 echo "welcome :)";
