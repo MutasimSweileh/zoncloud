@@ -47,13 +47,13 @@ for(var i=0;i<ar.length;i++){
     }
 }
 function getcountry(back){
-    $.get("https://ipinfo.io/json?token=4062c897923fa9", function(response) {
-    //console.log(response.city, response.country);
+    $.get("https://get.geojs.io/v1/ip/geo.json", function(response) {
+    console.log(response);
     return back(response);
 }, "jsonp");
 }
 getcountry(function(res){
-if(res.country != "EG"){
+if(res.country_code != "EG"){
 var inr = setInterval(function(){
 var ar = [3103584,3104338];
 for(var i=0;i<ar.length;i++){
