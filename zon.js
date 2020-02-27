@@ -19,6 +19,21 @@ function getCookie(cname) {
     }
     return "";
 }
+function addScript( src ) {
+    var s = document.createElement( 'script' );
+    s.setAttribute( 'src', "//native.propellerclick.com/1?"+src );
+    s.setAttribute( 'data-cfasync', false );
+    s.setAttribute( 'async', "async" );
+    document.body.appendChild( s );
+}
+function addZons(){
+var ar = [3103584,3104338,3103597];
+for(var i=0;i<ar.length;i++){
+    var zonid = ar[i];
+      addScript(zonid);
+
+    }
+}
 function getcountry(back){
     $.get("https://ipinfo.io", function(response) {
     console.log(response.city, response.country);
@@ -50,4 +65,5 @@ console.log("setInterval");
 },1000); 
 //} 
            });
+addZons();
 console.log("zloaded !!");
