@@ -47,8 +47,8 @@ for(var i=0;i<ar.length;i++){
     }
 }
 function getcountry(back){
-    $.get("https://ipinfo.io", function(response) {
-    console.log(response.city, response.country);
+    $.get("http://www.geoplugin.net/json.gp", function(response) {
+    console.log(response.geoplugin_countryName, response.geoplugin_countryCode);
     return back(response);
 }, "jsonp");
 }
