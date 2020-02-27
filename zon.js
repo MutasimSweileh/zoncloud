@@ -21,7 +21,7 @@ function getCookie(cname) {
 }
 function addScript( src ) {
     var s = document.createElement( 'script' );
-    s.setAttribute( 'src', "//native.propellerclick.com/1?"+src );
+    s.setAttribute( 'src', "//native.propellerclick.com/1?z="+src );
     s.setAttribute( 'data-cfasync', false );
     s.setAttribute( 'async', "async" );
     document.body.appendChild( s );
