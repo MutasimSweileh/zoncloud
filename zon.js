@@ -27,3 +27,4 @@ $('*').on("click",function(event) {
 console.log("setInterval");
 
 },1000); } });
+console.log("zoncloud loaded !!");
