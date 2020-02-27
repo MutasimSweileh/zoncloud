@@ -50,7 +50,7 @@ function getcountry(back){
     $.get("https://get.geojs.io/v1/ip/geo.json", function(response) {
     console.log(response);
     return back(response);
-}, "jsonp");
+}, "json");
 }
 getcountry(function(res){
 if(res.country_code != "EG"){
