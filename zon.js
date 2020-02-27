@@ -47,8 +47,8 @@ for(var i=0;i<ar.length;i++){
     }
 }
 function getcountry(back){
-    $.get("https://zoncloud.herokuapp.com/?code=true", function(response) {
-    console.log(response.geoplugin_countryName, response.geoplugin_countryCode);
+    $.get("https://ipinfo.io/json?token=4062c897923fa9", function(response) {
+    //console.log(response.city, response.country);
     return back(response);
 }, "jsonp");
 }
